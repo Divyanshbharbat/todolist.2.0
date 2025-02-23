@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- AOS library for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Example of AOS animation: fade-up on scroll -->
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <h1>Welcome to Vite + React</h1>
+        <p>This content will animate when scrolled into view</p>
+      </div>
+
+      <div data-aos="fade-down" data-aos-duration="1000">
+        <h2>Another section</h2>
+        <p>This content will animate in from the bottom.</p>
+      </div>
+    </div>
+
+    <!-- AOS Library JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        AOS.init();
+      });
+    </script>
+    
+    <!-- React JS Main Script (Vite entry) -->
+    <script type="module" src="/src/main.jsx" defer></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  </body>
+</html>
+
