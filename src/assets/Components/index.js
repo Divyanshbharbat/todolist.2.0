@@ -25,11 +25,11 @@ app.use(cors({
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 }));
-app.use(cors({
-  origin: "http://localhost:5173",  // Allow your frontend domain
-  methods: "GET,POST,PUT,DELETE",
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: "http://localhost:5173",  // Allow your frontend domain
+//   methods: "GET,POST,PUT,DELETE",
+//   credentials: true,
+// }));
 app.use(cookieParser());
 
 // JWT Middleware
