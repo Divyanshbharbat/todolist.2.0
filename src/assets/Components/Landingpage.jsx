@@ -6,7 +6,7 @@ const Landingpage = () => {
     <div>
       <div  data-aos="fade-up"
      data-aos-easing="linear"
-     data-aos-duration="1500" className="main">
+     data-aos-duration="1500" id='main' className="container-fluid">
         <div className="navbar ">
            <ul data-aos="fade-left"
      data-aos-anchor="#example-anchor"

@@ -42,7 +42,7 @@ const Home = () => {
         },
         withCredentials: true, // Include cookies if needed
       });
-  setname(response.data.user)
+ setname(response.data.user)
       setArray(response.data.data); // Update state with the fetched data
     } catch (err) {
       console.log("Error fetching data:", err);
@@ -92,10 +92,10 @@ const Home = () => {
   navigate("/")
 }
 } className='p-2 logout text-dark fw-bold my-5' style={{ backgroundColor: "purple", color: "", border: 0, borderRadius: "1vh" }} >Logout</button>  </span>
-<div className="container-fluid " data-aos="flip-left"  id='back'>
+<div   className="container-fluid "  id='back'>
 {array.map((item) => (
-  <div key={item._id} id='box' className="container-fluid  py-5 px-3  text-white my-5" >
-    <div  className="row d-flex">
+  <div data-aos="flip-up"  key={item._id} id='box' className="container-fluid  py-5 px-3  text-white my-5" >
+    <div    className="row d-flex">
         <div className="create my-3 "><span className='fs-4'>Create At : </span><span id='create' className=''>{item.createat}</span></div>
       <div className="col-lg-3 col-sm-12 my-2"><span className='fs-3 text-dark fw-bolder'>{item.time}</span></div>
       <div className="col-lg-3 col-sm-12 my-3 "><textarea  style={{ height: "20vh", width: "30vh", border: 0 }} value={item.work} id="text"></textarea></div>

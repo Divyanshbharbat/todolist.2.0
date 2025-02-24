@@ -18,7 +18,7 @@ const signup =  () => {
         if (res.data == 'success') {
           toast.success("Signup Successfully")
           setTimeout(() => {
-            navigate("/");
+            navigate("/login");
 
           }, 1000)
         }
@@ -85,7 +85,7 @@ const signup =  () => {
                   </div>
                  
                   <div className="button d-flex justify-content-center  ">
-                    <NavLink to={'/'}> <button type="button" id='btn' className="btn bg-white mx-3">Login</button></NavLink>
+                    <NavLink to={'/login'}> <button type="button" id='btn' className="btn bg-white mx-3">Login</button></NavLink>
                     <button type="submit" id='btn2' className="btn bg-white  mx-3">Submit</button>
                   </div>
                 </form>
