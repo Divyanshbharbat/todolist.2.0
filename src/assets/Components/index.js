@@ -20,16 +20,16 @@ const corsOptions = {
 };
 
 // Use the CORS middleware with the specified options
-app.use(cors({
-  origin: "https://divyansh-lilac.vercel.app",  // Allow your frontend domain
-  methods: "GET,POST,PUT,DELETE",
-  credentials: true,
-}));
 // app.use(cors({
-//   origin: "http://localhost:5173",  // Allow your frontend domain
+//   origin: "https://divyansh-lilac.vercel.app",  // Allow your frontend domain
 //   methods: "GET,POST,PUT,DELETE",
 //   credentials: true,
 // }));
+app.use(cors({
+  origin: "http://localhost:5173",  // Allow your frontend domain
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true,
+}));
 app.use(cookieParser());
 
 // JWT Middleware
@@ -180,7 +180,7 @@ mongoose
     console.log('MongoDB connected');
   })
   .catch((err) => {
-    console.error('MongoDB connection error:', err);
+    console.error('ngoDB connection error:', err);
   });
 
 app.listen(7000, () => {

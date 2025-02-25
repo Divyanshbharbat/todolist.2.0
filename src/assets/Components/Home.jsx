@@ -109,9 +109,7 @@ const Home = () => {
 
 <h1 className='fs-1 text-dark fw-bold mx-5'>Create list</h1>
 <form onSubmit={handleSubmit}>
-<div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className="container-fluid  my-5 p-5 " id='form' style={{ display: "flex", flexDirection: "column" }}>
+<div  className="container-fluid  my-5 p-5 " id='form' style={{ display: "flex", flexDirection: "column" }}>
   <span className='fs-2 fw-bold my-3'>Choose Time</span>
   <div className="input my-2">
     <input className='py-1 border-0 px-3'

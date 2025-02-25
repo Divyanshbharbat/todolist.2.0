@@ -55,7 +55,7 @@ const signup =  () => {
                   </div>
                   <div className="input my-5 mx-3">
                     <input
-                      type="password"
+                      type="email"
                       {...register("email", { required: "Email is required" })}
                       placeholder="Email" name='email' id='email'
                       style={{
